@@ -39,7 +39,6 @@ export default function SignUp({}: Props) {
             let newUser = response.data!
             console.log(`Congrats ${newUser.firstName} ${newUser.lastName} has been created with the username ${newUser.username}`)
         }
-        
     }
 
     // const disableSubmit = userFormData.password.length < 5 || userFormData.password !== userFormData.confirmPassword
