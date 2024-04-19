@@ -41,7 +41,7 @@ export default function Login({ flashMessage, logUserIn }: LoginProps) {
             localStorage.setItem('token', token);
             localStorage.setItem('tokenExp', tokenExp);
             logUserIn();
-            flashMessage(response.data?.token, 'success');
+            flashMessage("You have successfully logged in", 'success');
             navigate('/')
         }
     }
